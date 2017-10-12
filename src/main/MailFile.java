@@ -1,7 +1,7 @@
 package main;
 
 /**
- * @author nelli and etienne
+ * @author Nelli Welker, Etienne Onasch
  *
  */
 public interface MailFile {

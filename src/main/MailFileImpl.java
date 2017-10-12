@@ -2,7 +2,7 @@ package main;
 //Testkommentar
 
 /**
- * @author nelli and etienne
+ * @author Nelli Welker, Etienne Onasch
  *
  */
 public class MailFileImpl implements MailFile{
