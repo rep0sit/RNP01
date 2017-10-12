@@ -1,6 +1,9 @@
 package main;
-//Testkommentar
 
-public class MailFile {
+/**
+ * @author nelli and etienne
+ *
+ */
+public interface MailFile {
 
 }
