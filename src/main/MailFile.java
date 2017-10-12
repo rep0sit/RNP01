@@ -6,4 +6,12 @@ package main;
  */
 public interface MailFile {
 
+	/*
+	 * 
+	 */
+	public String getEmailFromKonfigfile();
+	/*
+	 * 
+	 */
+	public void getPasswordFromLogin(char[] password);
 }
