@@ -5,17 +5,17 @@ package main;
  *
  */
 public interface MailFile {
-//<<<<<<< HEAD
 
-	/*
+	/**
+	 * Methode, um die Email-Adresse aus der Konfigurationsdatei auszulesen
 	 * 
 	 */
 	public String getEmailFromKonfigfile();
-	/*
+	/**
+	 * Methode, um das Passwort aus der Eingabe des Absenders zu holen
 	 * 
 	 */
 	public void getPasswordFromLogin(char[] password);
-//=======
 	/**
 	 * Methode f¸r einen login auf einem SMTP Server. <br>
 	 * 
@@ -33,5 +33,4 @@ public interface MailFile {
 	 * Methode um alle relevanten Streams zu schlieﬂen.<br>
 	 */
 	public void closeFile();
-//>>>>>>> c81a5f280bb4979422611a830d9f42a69f522719
 }

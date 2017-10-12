@@ -7,7 +7,6 @@ package main;
 public class MailFileImpl implements MailFile{
 
 	@Override
-//<<<<<<< HEAD
 	public String getEmailFromKonfigfile() {
 		return "nelli.welker@web.de";
 	}
@@ -17,7 +16,7 @@ public class MailFileImpl implements MailFile{
 							
 		System.out.println("PW: "+pw);
 	}
-//=======
+	@Override
 	public void loginSMTP() {
 		// TODO Auto-generated method stub
 		
@@ -39,7 +38,6 @@ public class MailFileImpl implements MailFile{
 	public void closeFile() {
 		// TODO Auto-generated method stub
 		
-//>>>>>>> c81a5f280bb4979422611a830d9f42a69f522719
 	}
 
 }
