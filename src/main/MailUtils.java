@@ -10,7 +10,10 @@ import java.util.Properties;
  *
  */
 class MailUtils {
+	//FIELDS
+	public static final String CONFIG_FILE = "Konfigurationsdatei.txt";
 	
+	//METHODS
 	public static Properties getProp(String konfigFile){
 		Properties props = new Properties();
 

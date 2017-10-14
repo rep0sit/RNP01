@@ -6,7 +6,7 @@ import java.io.IOException;
  * @author Nelli Welker, Etienne Onasch
  *
  */
-interface MailFileInterface {
+interface MailFileLogic {
 
 	/**
 	 * Methode, um die Email-Adresse aus der Konfigurationsdatei auszulesen
@@ -36,4 +36,5 @@ interface MailFileInterface {
 	 * @throws IOException 
 	 */
 	public void closeFile() throws IOException;
+	//public String getPassword();
 }

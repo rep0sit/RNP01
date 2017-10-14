@@ -81,7 +81,7 @@ class LoginGUI {
 		loginButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				System.out.println("BUTN");
-				MailFileImpl.givePasswordToImpl(getPasswordFromGui());
+				MailFileLogicImpl.givePasswordToImpl(getPasswordFromGui());
 				
 				//frame.dispose();
 			}
@@ -93,7 +93,7 @@ class LoginGUI {
 			public void keyPressed(KeyEvent arg0) {
 				if(arg0.getKeyCode() == KeyEvent.VK_ENTER){
 //					mailFileImpl.givePasswordToImpl(getPasswordFromGui());
-					MailFileImpl.givePasswordToImpl(getPasswordFromGui());
+					MailFileLogicImpl.givePasswordToImpl(getPasswordFromGui());
 				}
 			}
 

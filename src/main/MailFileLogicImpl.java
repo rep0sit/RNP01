@@ -18,7 +18,7 @@ import javax.net.ssl.SSLSocketFactory;
  * @author Nelli Welker, Etienne Onasch
  *
  */
-class MailFileImpl implements MailFileInterface{
+class MailFileLogicImpl implements MailFileLogic{
 	
 	private String konfigFile;
 	private String recipient;
@@ -42,9 +42,9 @@ class MailFileImpl implements MailFileInterface{
 	File logFile;
 	FileWriter fw;
 	
-	MailFileImpl(String recipient, String konfigFileName, String attachment) throws IOException{
+	MailFileLogicImpl(String recipient, String attachment) throws IOException{
 		this.recipient = recipient;
-		this.konfigFile = konfigFileName;
+		this.konfigFile = MailUtils.CONFIG_FILE;
 		
 		attachmentFile = attachment;
 		
@@ -191,7 +191,7 @@ class MailFileImpl implements MailFileInterface{
 		return password;
 	}
 	public static void setPassword(String password) {
-		MailFileImpl.password = password;
+		MailFileLogicImpl.password = password;
 	}
 	public String getUserName() {
 		return userName;
