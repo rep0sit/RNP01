@@ -9,7 +9,7 @@ import java.util.Properties;
  * @author nelli and etienne
  *
  */
-public class MailUtils {
+class MailUtils {
 	
 	public static Properties getProp(String konfigFile){
 		Properties props = new Properties();

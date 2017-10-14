@@ -18,7 +18,7 @@ import javax.net.ssl.SSLSocketFactory;
  * @author Nelli Welker, Etienne Onasch
  *
  */
-public class MailFileImpl implements MailFileInterface{
+class MailFileImpl implements MailFileInterface{
 	
 	private String konfigFile;
 	private String recipient;
@@ -152,7 +152,7 @@ public class MailFileImpl implements MailFileInterface{
 			//Senden der kodierten File-Datei
 			smtpOut.write(encoded);
 
-			//Abschließen
+			//Abschlieï¿½en
 			smtpOut.write(crlf);
 			smtpOut.write("--"+boundary+"--"+crlf);
 			smtpOut.write(crlf+"."+crlf);     

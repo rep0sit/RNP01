@@ -6,7 +6,7 @@ import java.io.IOException;
  * @author Nelli Welker, Etienne Onasch
  *
  */
-public interface MailFileInterface {
+interface MailFileInterface {
 
 	/**
 	 * Methode, um die Email-Adresse aus der Konfigurationsdatei auszulesen
@@ -19,7 +19,7 @@ public interface MailFileInterface {
 //	 */
 //	public void givePasswordToImpl(char[] password);
 	/**
-	 * Methode für einen login auf einem SMTP Server. <br>
+	 * Methode fï¿½r einen login auf einem SMTP Server. <br>
 	 * 
 	 */
 	public void loginSMTP();
@@ -32,7 +32,7 @@ public interface MailFileInterface {
 	 */
 	public void sendMail();
 	/**
-	 * Methode um alle relevanten Streams zu schließen.<br>
+	 * Methode um alle relevanten Streams zu schlieï¿½en.<br>
 	 * @throws IOException 
 	 */
 	public void closeFile() throws IOException;

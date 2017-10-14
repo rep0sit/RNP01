@@ -17,7 +17,7 @@ import javax.swing.JTextField;
  * @author nelli, etienne
  *
  */
-public class LoginGUI {
+class LoginGUI {
 
 	private JFrame frame;
 	private static JTextField emailTextField;

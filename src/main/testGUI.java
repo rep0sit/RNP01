@@ -6,7 +6,7 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class testGUI extends JPanel {
+class testGUI extends JPanel {
 	private JTextField textField;
 
 	/**
