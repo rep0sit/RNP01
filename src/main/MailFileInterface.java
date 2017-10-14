@@ -1,0 +1,39 @@
+package main;
+
+import java.io.IOException;
+
+/**
+ * @author Nelli Welker, Etienne Onasch
+ *
+ */
+public interface MailFileInterface {
+
+	/**
+	 * Methode, um die Email-Adresse aus der Konfigurationsdatei auszulesen
+	 * 
+	 */
+	public String getEmailFromKonfigfile();
+//	/**
+//	 * Methode, um das Passwort aus der Eingabe des Absenders zu holen
+//	 * 
+//	 */
+//	public void givePasswordToImpl(char[] password);
+	/**
+	 * Methode für einen login auf einem SMTP Server. <br>
+	 * 
+	 */
+	public void loginSMTP();
+	/**
+	 * Methode um sich vom SMTP Server abzumelden.<br>
+	 */
+	public void quitSMTP();
+	/**
+	 * Methode um eine Mail zu verschicken.<br>
+	 */
+	public void sendMail();
+	/**
+	 * Methode um alle relevanten Streams zu schließen.<br>
+	 * @throws IOException 
+	 */
+	public void closeFile() throws IOException;
+}

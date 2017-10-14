@@ -1,0 +1,6 @@
+Konfigurationsdatei
+Mailadresse: nelli.welker@haw-hamburg.de
+Benutzername: nelli.welker
+Hostname: mailgate.informatik.haw-hamburg.de
+Portnummer: 465
+Nachrichtenbody: Hello i am here!\n How are you?"

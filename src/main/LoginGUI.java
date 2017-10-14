@@ -1,32 +1,44 @@
 package main;
 
 import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import net.miginfocom.swing.MigLayout;
-import javax.swing.JLabel;
-import javax.swing.JTextField;
-import javax.swing.JButton;
-import java.awt.event.ActionListener;
+import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
-import javax.swing.JPasswordField;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+
+/**
+ * @author nelli, etienne
+ *
+ */
 public class LoginGUI {
 
 	private JFrame frame;
-	private JTextField emailTextField;
+	private static JTextField emailTextField;
 	private JButton loginButton;
-	private MailFile mailFile;
-	private JPasswordField passwordField;
+	private static String _sender;
+	private static JPasswordField passwordField;
+//	private MailFileImpl mailFileImpl;
+	
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
+	public void openGui(String sender) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
 					LoginGUI window = new LoginGUI();
 					window.frame.setVisible(true);
+					_sender = sender;
+					System.out.println("SENDER "+sender);
+					setEmailFromKonfig();
+					//enterOnPasswordField();
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -39,8 +51,6 @@ public class LoginGUI {
 	 */
 	public LoginGUI() {
 		initialize();
-		mailFile = new MailFileImpl();
-		setStartValues();
 	}
 
 	/**
@@ -49,44 +59,68 @@ public class LoginGUI {
 	private void initialize() {
 		frame = new JFrame();
 		frame.setResizable(false);
-		frame.setBounds(100, 100, 395, 220);
+		frame.setBounds(100, 100, 258, 275);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().setLayout(new MigLayout("", "[][300px:n:300px,grow]", "[][][][][][][]"));
+		frame.getContentPane().setLayout(new GridLayout(6, 3, 1, 2));
 		
 		JLabel loginInstrLabel = new JLabel("Please enter your password!");
-		frame.getContentPane().add(loginInstrLabel, "cell 1 0");
+		frame.getContentPane().add(loginInstrLabel);
 		
 		JLabel emailLabel = new JLabel("E-Mail:");
-		frame.getContentPane().add(emailLabel, "cell 0 2,alignx trailing");
+		frame.getContentPane().add(emailLabel);
 		
 		emailTextField = new JTextField();
 		emailTextField.setEditable(false);
-		frame.getContentPane().add(emailTextField, "cell 1 2,growx");
+		frame.getContentPane().add(emailTextField);
 		emailTextField.setColumns(10);
 		
 		JLabel passwordLabel = new JLabel("Password:");
-		frame.getContentPane().add(passwordLabel, "cell 0 4,alignx trailing");
+		frame.getContentPane().add(passwordLabel);
 		
 		loginButton = new JButton("Login");
 		loginButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				getPassword();
+				System.out.println("BUTN");
+				MailFileImpl.givePasswordToImpl(getPasswordFromGui());
+				
+				//frame.dispose();
 			}
 		});
 		
 		passwordField = new JPasswordField();
-		frame.getContentPane().add(passwordField, "cell 1 4,growx");
-		frame.getContentPane().add(loginButton, "cell 1 6,growx");
-	}
-	public void setEmailFromKonfig(){
-		emailTextField.setText(mailFile.getEmailFromKonfigfile());
-	}
-	public void getPassword(){
-		char[] password = passwordField.getPassword();
-		mailFile.getPasswordFromLogin(password);
-	}
-	private void setStartValues() {
-		setEmailFromKonfig();
+		passwordField.addKeyListener(new KeyListener(){
+			@Override
+			public void keyPressed(KeyEvent arg0) {
+				if(arg0.getKeyCode() == KeyEvent.VK_ENTER){
+//					mailFileImpl.givePasswordToImpl(getPasswordFromGui());
+					MailFileImpl.givePasswordToImpl(getPasswordFromGui());
+				}
+			}
+
+			@Override
+			public void keyReleased(KeyEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void keyTyped(KeyEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
 		
+		frame.getContentPane().add(passwordField);
+		frame.getContentPane().add(loginButton);
 	}
+	public static void setEmailFromKonfig(){
+		emailTextField.setText(_sender);
+		System.out.println("EMAILTEXTFELD: "+emailTextField.getText());
+	}
+	public char[] getPasswordFromGui(){
+		char[] password = passwordField.getPassword();
+		System.out.println("PW tostring:"+password.toString());
+		return password;
+	}
+	
 }
