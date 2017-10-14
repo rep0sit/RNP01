@@ -49,7 +49,7 @@ class MailFileLogicImpl implements MailFileLogic{
 		this.recipient = recipient;
 		this.konfigFile = MailUtils.CONFIG_FILE;
 		this.loginGui = loginGui;
-		this.password = loginGui.getPassword().toString();
+//		
 		
 		attachmentFile = attachment;
 		
@@ -69,6 +69,7 @@ class MailFileLogicImpl implements MailFileLogic{
 	public String getEmailFromKonfigfile() {
 		return mailAddr;
 	}
+	
 	
 	/**
 	 * Methode, um das Passwort aus dem Login zu holen und zu setzen
@@ -91,6 +92,7 @@ class MailFileLogicImpl implements MailFileLogic{
 			// HELO <SP> <domain> <CRLF>
 			sendCommand("HELO "+host);
 			//Base64 encodete Login-Daten
+			this.password = loginGui.getPassword().toString();
 			String userNameEncoded = Base64.getEncoder().encodeToString(userName.getBytes());
 			String passwordEncoded = Base64.getEncoder().encodeToString(password.getBytes());
 			// AUTH PLAIN

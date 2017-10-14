@@ -11,7 +11,7 @@ import java.util.Properties;
  */
 class MailUtils {
 	//FIELDS
-	public static final String CONFIG_FILE = "Konfigurationsdatei.txt";
+	public static final String CONFIG_FILE = "ConfigEtienne.properties";
 	
 	//METHODS
 	public static Properties getProp(String konfigFile){
