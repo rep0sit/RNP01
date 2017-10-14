@@ -31,7 +31,8 @@ class MailFileLogicImpl implements MailFileLogic{
 	//Attachmentfile
 	private String attachmentFile;
 	//Infos from LoginGUI
-	private static String password;
+	private static String password_deprecated;
+	private String password;
 	private Properties props;
 	
 	private SSLSocket smtpSocket;
@@ -39,12 +40,16 @@ class MailFileLogicImpl implements MailFileLogic{
 	private OutputStreamWriter smtpOut;
 	private String crlf = "\r\n";
 	
-	File logFile;
-	FileWriter fw;
+	private File logFile;
+	private FileWriter fw;
 	
-	MailFileLogicImpl(String recipient, String attachment) throws IOException{
+	private LoginGUI loginGui;
+	
+	MailFileLogicImpl(String recipient, String attachment, LoginGUI loginGui) throws IOException{
 		this.recipient = recipient;
 		this.konfigFile = MailUtils.CONFIG_FILE;
+		this.loginGui = loginGui;
+		this.password = loginGui.getPassword().toString();
 		
 		attachmentFile = attachment;
 		
@@ -67,11 +72,11 @@ class MailFileLogicImpl implements MailFileLogic{
 	
 	/**
 	 * Methode, um das Passwort aus dem Login zu holen und zu setzen
-	 * 
+	 * @deprecated
 	 */
 	public static void givePasswordToImpl(char[] pw) {
 		setPassword(pw.toString());
-//		System.out.println("MailFileImpl PW: "+getPassword());
+		// System.out.println("MailFileImpl PW: "+getPassword());
 	}
 	@Override
 	public void loginSMTP() {
@@ -112,7 +117,7 @@ class MailFileLogicImpl implements MailFileLogic{
 	 */
 	@Override
 	public void sendMail() {
-		System.out.println("Absender " + recipient + " anhang " + konfigFile + " password " + getPassword());
+		System.out.println("Absender " + recipient + " anhang " + konfigFile + " password " + getPassword_deprecated());
 		String boundary = "xyzzy_0123456789_xyzzy";
 		String textTest ="Hello...i am here.";
 		//			String crlf = "\r\n";
@@ -187,11 +192,18 @@ class MailFileLogicImpl implements MailFileLogic{
 		Timestamp ts = new Timestamp(System.currentTimeMillis());
 		fw.write(ts.toString() + " ---> "+ command + "\n");
 	}
-	public static String getPassword() {
+	@Deprecated
+	private static String getPassword_deprecated() {
+		return password_deprecated;
+	}
+	@Override
+	public String getPassword() {
 		return password;
 	}
+	
+	
 	public static void setPassword(String password) {
-		MailFileLogicImpl.password = password;
+		MailFileLogicImpl.password_deprecated = password;
 	}
 	public String getUserName() {
 		return userName;

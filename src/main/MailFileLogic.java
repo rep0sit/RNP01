@@ -37,4 +37,5 @@ interface MailFileLogic {
 	 */
 	public void closeFile() throws IOException;
 	//public String getPassword();
+	public String getPassword();
 }

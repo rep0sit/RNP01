@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
 public class MailFile {
 
 	public static void main(String[] args) throws IOException {
-		MailFileLogicImpl mailFileLogic;
+		MailFileLogic mailFileLogic;
 		
 		if(args.length != 2)
 		{
@@ -20,9 +20,10 @@ public class MailFile {
 			String recipient = args[0];
 			String attachment = args[1];
 			
-			mailFileLogic = new MailFileLogicImpl(recipient, attachment);
-			
 			LoginGUI loginGui = new LoginGUI();
+			mailFileLogic = new MailFileLogicImpl(recipient, attachment, loginGui);
+			
+			
 			
 			String emailFromKonfigFile = mailFileLogic.getEmailFromKonfigfile();
 			loginGui.openGui(emailFromKonfigFile);

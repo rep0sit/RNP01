@@ -20,10 +20,11 @@ import javax.swing.JTextField;
 class LoginGUI {
 
 	private JFrame frame;
-	private static JTextField emailTextField;
+	private  JTextField emailTextField;
 	private JButton loginButton;
-	private static String _sender;
-	private static JPasswordField passwordField;
+	private  String _sender;
+	private  JPasswordField passwordField;
+	private char[] password;
 //	private MailFileImpl mailFileImpl;
 	
 	/**
@@ -81,8 +82,8 @@ class LoginGUI {
 		loginButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				System.out.println("BUTN");
-				MailFileLogicImpl.givePasswordToImpl(getPasswordFromGui());
-				
+				//MailFileLogicImpl.givePasswordToImpl(getPassword());
+				password = passwordField.getPassword();
 				//frame.dispose();
 			}
 		});
@@ -93,7 +94,8 @@ class LoginGUI {
 			public void keyPressed(KeyEvent arg0) {
 				if(arg0.getKeyCode() == KeyEvent.VK_ENTER){
 //					mailFileImpl.givePasswordToImpl(getPasswordFromGui());
-					MailFileLogicImpl.givePasswordToImpl(getPasswordFromGui());
+					//MailFileLogicImpl.givePasswordToImpl(getPassword());
+					password = passwordField.getPassword();
 				}
 			}
 
@@ -113,13 +115,13 @@ class LoginGUI {
 		frame.getContentPane().add(passwordField);
 		frame.getContentPane().add(loginButton);
 	}
-	public static void setEmailFromKonfig(){
+	public  void setEmailFromKonfig(){
 		emailTextField.setText(_sender);
 		System.out.println("EMAILTEXTFELD: "+emailTextField.getText());
 	}
-	public char[] getPasswordFromGui(){
-		char[] password = passwordField.getPassword();
-		System.out.println("PW tostring:"+password.toString());
+	public char[] getPassword(){
+		
+		//System.out.println("PW tostring:"+password.toString());
 		return password;
 	}
 	
