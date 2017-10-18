@@ -1,0 +1,168 @@
+2017-10-18 13:13:18.04 ---> HELO mailgate.informatik.haw-hamburg.de
+2017-10-18 13:13:18.068 ---> 250 mailgate.informatik.haw-hamburg.de
+2017-10-18 13:13:18.069 ---> AUTH PLAIN 
+2017-10-18 13:13:18.106 ---> 334 
+2017-10-18 13:13:18.107 ---> YWJ0Njg3AGFidDY4NwBNYWlsVGVzdDEyMw==
+2017-10-18 13:13:18.138 ---> 235 2.7.0 Authentication successful
+2017-10-18 13:13:18.139 ---> MAIL FROM: nelli.welker@haw-hamburg.de
+2017-10-18 13:13:18.169 ---> 250 2.1.0 Ok
+2017-10-18 13:13:18.169 ---> RCPT TO: nelli.welker@haw-hamburg.de
+2017-10-18 13:13:18.241 ---> 250 2.1.5 Ok
+2017-10-18 13:13:18.242 ---> DATA
+2017-10-18 13:13:18.272 ---> 354 End data with <CR><LF>.<CR><LF>
+2017-10-18 13:13:18.298 ---> QUIT
+2017-10-18 13:13:18.403 ---> 250 2.0.0 Ok: queued as 5FC782ADCB
+2017-10-18 13:13:58.034 ---> HELO mailgate.informatik.haw-hamburg.de
+2017-10-18 13:13:58.061 ---> 250 mailgate.informatik.haw-hamburg.de
+2017-10-18 13:13:58.061 ---> AUTH PLAIN 
+2017-10-18 13:13:58.09 ---> 334 
+2017-10-18 13:13:58.09 ---> YWJ0Njg3AGFidDY4NwBNYWlsVGVzdDEyMw==
+2017-10-18 13:13:58.122 ---> 235 2.7.0 Authentication successful
+2017-10-18 13:13:58.122 ---> MAIL FROM: nelli.welker@haw-hamburg.de
+2017-10-18 13:13:58.156 ---> 250 2.1.0 Ok
+2017-10-18 13:13:58.156 ---> RCPT TO: nelli.welker@haw-hamburg.de
+2017-10-18 13:13:58.233 ---> 250 2.1.5 Ok
+2017-10-18 13:13:58.234 ---> DATA
+2017-10-18 13:13:58.262 ---> 354 End data with <CR><LF>.<CR><LF>
+2017-10-18 13:13:58.29 ---> QUIT
+2017-10-18 13:13:58.41 ---> 250 2.0.0 Ok: queued as 5EF322B5EC
+2017-10-18 13:15:27.227 ---> HELO mailgate.informatik.haw-hamburg.de
+2017-10-18 13:15:27.253 ---> 250 mailgate.informatik.haw-hamburg.de
+2017-10-18 13:15:27.254 ---> AUTH PLAIN 
+2017-10-18 13:15:27.283 ---> 334 
+2017-10-18 13:15:27.284 ---> YWJ0Njg3AGFidDY4NwA=
+2017-10-18 13:15:27.313 ---> 535 5.7.8 Error: authentication failed: authentication failure
+2017-10-18 13:15:27.314 ---> MAIL FROM: nelli.welker@haw-hamburg.de
+2017-10-18 13:15:27.35 ---> 250 2.1.0 Ok
+2017-10-18 13:15:27.351 ---> RCPT TO: nelli.welker@haw-hamburg.de
+2017-10-18 13:15:27.423 ---> 553 5.7.1 <nelli.welker@haw-hamburg.de>: Sender address rejected: not logged in
+2017-10-18 13:15:27.424 ---> DATA
+2017-10-18 13:15:27.452 ---> 554 5.5.1 Error: no valid recipients
+2017-10-18 13:15:27.481 ---> QUIT
+2017-10-18 13:15:27.504 ---> 221 2.7.0 Error: I can break rules, too. Goodbye.
+2017-10-18 13:17:53.279 ---> HELO mailgate.informatik.haw-hamburg.de
+2017-10-18 13:17:53.306 ---> 250 mailgate.informatik.haw-hamburg.de
+2017-10-18 13:17:53.307 ---> AUTH PLAIN 
+2017-10-18 13:17:53.336 ---> 334 
+2017-10-18 13:17:53.338 ---> YWJ0Njg3AGFidDY4NwA=
+2017-10-18 13:17:53.367 ---> 535 5.7.8 Error: authentication failed: authentication failure
+2017-10-18 13:17:53.368 ---> MAIL FROM: nelli.welker@haw-hamburg.de
+2017-10-18 13:17:53.404 ---> 250 2.1.0 Ok
+2017-10-18 13:17:53.405 ---> RCPT TO: nelli.welker@haw-hamburg.de
+2017-10-18 13:17:53.48 ---> 553 5.7.1 <nelli.welker@haw-hamburg.de>: Sender address rejected: not logged in
+2017-10-18 13:17:53.481 ---> DATA
+2017-10-18 13:17:53.51 ---> 554 5.5.1 Error: no valid recipients
+2017-10-18 13:17:53.538 ---> QUIT
+2017-10-18 13:17:53.563 ---> 221 2.7.0 Error: I can break rules, too. Goodbye.
+2017-10-18 13:26:08.101 ---> HELO mailgate.informatik.haw-hamburg.de
+2017-10-18 13:26:08.132 ---> 250 mailgate.informatik.haw-hamburg.de
+2017-10-18 13:26:08.133 ---> AUTH PLAIN 
+2017-10-18 13:26:08.159 ---> 334 
+2017-10-18 13:26:08.16 ---> YWJ0Njg3AGFidDY4NwA=
+2017-10-18 13:26:08.198 ---> 535 5.7.8 Error: authentication failed: authentication failure
+2017-10-18 13:26:08.198 ---> MAIL FROM: nelli.welker@haw-hamburg.de
+2017-10-18 13:26:08.225 ---> 250 2.1.0 Ok
+2017-10-18 13:26:08.226 ---> RCPT TO: nelli.welker@haw-hamburg.de
+2017-10-18 13:26:08.299 ---> 553 5.7.1 <nelli.welker@haw-hamburg.de>: Sender address rejected: not logged in
+2017-10-18 13:26:08.299 ---> DATA
+2017-10-18 13:26:08.325 ---> 554 5.5.1 Error: no valid recipients
+2017-10-18 13:26:08.351 ---> QUIT
+2017-10-18 13:26:08.374 ---> 221 2.7.0 Error: I can break rules, too. Goodbye.
+2017-10-18 13:26:20.67 ---> HELO mailgate.informatik.haw-hamburg.de
+2017-10-18 13:26:20.702 ---> 250 mailgate.informatik.haw-hamburg.de
+2017-10-18 13:26:20.702 ---> AUTH PLAIN 
+2017-10-18 13:26:20.729 ---> 334 
+2017-10-18 13:26:20.73 ---> YWJ0Njg3AGFidDY4NwA=
+2017-10-18 13:26:20.758 ---> 535 5.7.8 Error: authentication failed: authentication failure
+2017-10-18 13:26:20.759 ---> MAIL FROM: nelli.welker@haw-hamburg.de
+2017-10-18 13:26:20.785 ---> 250 2.1.0 Ok
+2017-10-18 13:26:20.786 ---> RCPT TO: nelli.welker@haw-hamburg.de
+2017-10-18 13:26:20.844 ---> 553 5.7.1 <nelli.welker@haw-hamburg.de>: Sender address rejected: not logged in
+2017-10-18 13:26:20.844 ---> DATA
+2017-10-18 13:26:20.871 ---> 554 5.5.1 Error: no valid recipients
+2017-10-18 13:26:20.903 ---> QUIT
+2017-10-18 13:26:20.923 ---> 221 2.7.0 Error: I can break rules, too. Goodbye.
+2017-10-18 13:26:42.06 ---> HELO mailgate.informatik.haw-hamburg.de
+2017-10-18 13:26:42.085 ---> 250 mailgate.informatik.haw-hamburg.de
+2017-10-18 13:26:42.085 ---> AUTH PLAIN 
+2017-10-18 13:26:42.112 ---> 334 
+2017-10-18 13:26:42.113 ---> YWJ0Njg3AGFidDY4NwA=
+2017-10-18 13:26:42.142 ---> 535 5.7.8 Error: authentication failed: authentication failure
+2017-10-18 13:26:42.143 ---> MAIL FROM: nelli.welker@haw-hamburg.de
+2017-10-18 13:26:42.185 ---> 250 2.1.0 Ok
+2017-10-18 13:26:42.186 ---> RCPT TO: nelli.welker@haw-hamburg.de
+2017-10-18 13:26:42.247 ---> 553 5.7.1 <nelli.welker@haw-hamburg.de>: Sender address rejected: not logged in
+2017-10-18 13:26:42.247 ---> DATA
+2017-10-18 13:26:42.274 ---> 554 5.5.1 Error: no valid recipients
+2017-10-18 13:26:42.299 ---> QUIT
+2017-10-18 13:26:42.319 ---> 221 2.7.0 Error: I can break rules, too. Goodbye.
+2017-10-18 13:30:08.3 ---> HELO mailgate.informatik.haw-hamburg.de
+2017-10-18 13:30:08.329 ---> 250 mailgate.informatik.haw-hamburg.de
+2017-10-18 13:30:08.33 ---> AUTH PLAIN 
+2017-10-18 13:30:08.358 ---> 334 
+2017-10-18 13:30:08.36 ---> YWJ0Njg3AGFidDY4NwA=
+2017-10-18 13:30:08.398 ---> 535 5.7.8 Error: authentication failed: authentication failure
+2017-10-18 13:30:08.398 ---> MAIL FROM: nelli.welker@haw-hamburg.de
+2017-10-18 13:30:08.434 ---> 250 2.1.0 Ok
+2017-10-18 13:30:08.435 ---> RCPT TO: nelli.welker@haw-hamburg.de
+2017-10-18 13:30:08.509 ---> 553 5.7.1 <nelli.welker@haw-hamburg.de>: Sender address rejected: not logged in
+2017-10-18 13:30:08.509 ---> DATA
+2017-10-18 13:30:08.538 ---> 554 5.5.1 Error: no valid recipients
+2017-10-18 13:30:08.565 ---> QUIT
+2017-10-18 13:30:08.591 ---> 221 2.7.0 Error: I can break rules, too. Goodbye.
+2017-10-18 13:30:26.697 ---> HELO mailgate.informatik.haw-hamburg.de
+2017-10-18 13:30:26.733 ---> 250 mailgate.informatik.haw-hamburg.de
+2017-10-18 13:30:26.734 ---> AUTH PLAIN 
+2017-10-18 13:30:26.771 ---> 334 
+2017-10-18 13:30:26.772 ---> YWJ0Njg3AGFidDY4NwA=
+2017-10-18 13:30:26.803 ---> 535 5.7.8 Error: authentication failed: authentication failure
+2017-10-18 13:30:26.804 ---> MAIL FROM: nelli.welker@haw-hamburg.de
+2017-10-18 13:30:26.834 ---> 250 2.1.0 Ok
+2017-10-18 13:30:26.835 ---> RCPT TO: nelli.welker@haw-hamburg.de
+2017-10-18 13:30:26.898 ---> 553 5.7.1 <nelli.welker@haw-hamburg.de>: Sender address rejected: not logged in
+2017-10-18 13:30:26.899 ---> DATA
+2017-10-18 13:30:26.928 ---> 554 5.5.1 Error: no valid recipients
+2017-10-18 13:30:26.959 ---> QUIT
+2017-10-18 13:30:26.987 ---> 221 2.7.0 Error: I can break rules, too. Goodbye.
+2017-10-18 13:30:38.429 ---> HELO mailgate.informatik.haw-hamburg.de
+2017-10-18 13:30:38.46 ---> 250 mailgate.informatik.haw-hamburg.de
+2017-10-18 13:30:38.461 ---> AUTH PLAIN 
+2017-10-18 13:30:38.491 ---> 334 
+2017-10-18 13:30:38.492 ---> YWJ0Njg3AGFidDY4NwBNYWlsVGVzdDEyMw==
+2017-10-18 13:30:38.523 ---> 235 2.7.0 Authentication successful
+2017-10-18 13:30:38.523 ---> MAIL FROM: nelli.welker@haw-hamburg.de
+2017-10-18 13:30:38.551 ---> 250 2.1.0 Ok
+2017-10-18 13:30:38.551 ---> RCPT TO: nelli.welker@haw-hamburg.de
+2017-10-18 13:30:38.631 ---> 250 2.1.5 Ok
+2017-10-18 13:30:38.631 ---> DATA
+2017-10-18 13:30:38.667 ---> 354 End data with <CR><LF>.<CR><LF>
+2017-10-18 13:30:38.695 ---> QUIT
+2017-10-18 13:30:38.821 ---> 250 2.0.0 Ok: queued as C8AE52ADCB
+2017-10-18 13:31:21.453 ---> HELO mailgate.informatik.haw-hamburg.de
+2017-10-18 13:31:21.481 ---> 250 mailgate.informatik.haw-hamburg.de
+2017-10-18 13:31:21.482 ---> AUTH PLAIN 
+2017-10-18 13:31:21.512 ---> 334 
+2017-10-18 13:31:21.513 ---> YWJ0Njg3AGFidDY4NwBNYWlsVGVzdDEyMw==
+2017-10-18 13:31:21.542 ---> 235 2.7.0 Authentication successful
+2017-10-18 13:31:21.543 ---> MAIL FROM: nelli.welker@haw-hamburg.de
+2017-10-18 13:31:21.573 ---> 250 2.1.0 Ok
+2017-10-18 13:31:21.574 ---> RCPT TO: nelli.welker@haw-hamburg.de
+2017-10-18 13:31:21.658 ---> 250 2.1.5 Ok
+2017-10-18 13:31:21.659 ---> DATA
+2017-10-18 13:31:21.688 ---> 354 End data with <CR><LF>.<CR><LF>
+2017-10-18 13:31:21.716 ---> QUIT
+2017-10-18 13:31:21.819 ---> 250 2.0.0 Ok: queued as CF2792ADCB
+2017-10-18 13:49:35.928 ---> HELO mailgate.informatik.haw-hamburg.de
+2017-10-18 13:49:35.96 ---> 250 mailgate.informatik.haw-hamburg.de
+2017-10-18 13:49:35.961 ---> AUTH PLAIN 
+2017-10-18 13:49:35.99 ---> 334 
+2017-10-18 13:49:35.992 ---> YWJ0Njg3AGFidDY4NwBNYWlsVGVzdDEyMw==
+2017-10-18 13:49:36.028 ---> 235 2.7.0 Authentication successful
+2017-10-18 13:49:36.029 ---> MAIL FROM: nelli.welker@haw-hamburg.de
+2017-10-18 13:49:36.059 ---> 250 2.1.0 Ok
+2017-10-18 13:49:36.06 ---> RCPT TO: nelli.welker@haw-hamburg.de
+2017-10-18 13:49:36.121 ---> 250 2.1.5 Ok
+2017-10-18 13:49:36.121 ---> DATA
+2017-10-18 13:49:36.15 ---> 354 End data with <CR><LF>.<CR><LF>
+2017-10-18 13:49:36.204 ---> QUIT
+2017-10-18 13:49:36.331 ---> 250 2.0.0 Ok: queued as 56E942ADCB
